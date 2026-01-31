@@ -1,12 +1,12 @@
 
 import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Header from './components/Header';
-import NewsCard from './components/NewsCard';
-import AdPlaceholder from './components/AdPlaceholder';
-import { fetchLiveNews } from './services/newsService';
-import { NewsItem } from './types';
-import { STATIC_FILES, TIMELINE_DATA } from './constants';
+import Header from './components/Header.tsx';
+import NewsCard from './components/NewsCard.tsx';
+import AdPlaceholder from './components/AdPlaceholder.tsx';
+import { fetchLiveNews } from './services/newsService.ts';
+import { NewsItem } from './types.ts';
+import { STATIC_FILES, TIMELINE_DATA } from './constants.tsx';
 
 const NewsView: React.FC = () => {
   const [news, setNews] = useState<NewsItem[]>([]);
